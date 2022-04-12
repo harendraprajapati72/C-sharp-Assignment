@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; //implementation of decision making
 
 namespace Harendra
 {
@@ -6,26 +6,18 @@ namespace Harendra
     {
         public static void Main(string[] args)
         {
-            
-            Console.WriteLine("Please select from the following");
-            Console.WriteLine("1.Red");
-            Console.WriteLine("2.Green");
-            Console.WriteLine("3.Yellow");
-            Console.WriteLine("Enter your choice");
-            int ch=Convert.ToInt16(Console.ReadLine());
-            switch(ch){
-                case 1: Console.WriteLine("You Selected : Red " );
-                    break;
-                case 2:
-                    Console.WriteLine("You Selected : Greed");
-                    break;
-                case 3:
-                    Console.WriteLine("You Selected : Yellow ");
-                    break;
-                default: Console.WriteLine("Wrong Selection Try again");
-                    break;
+            Console.WriteLine("Please Enter a number to check thne number is odd or Even");
+            int i = Convert.ToInt16(Console.ReadLine());
+            if (i%2==0)
+            {
+                Console.WriteLine(i+" is an Even Number");
+
             }
-           
+            else
+            {
+                Console.WriteLine(i + " is an Odd Number");
             }
+
         }
     }
+}
